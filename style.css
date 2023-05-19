@@ -21,7 +21,7 @@ body {
   background-image: url(img/Rectangle\ 1.svg);
 }
 
-.title__main {
+.title-main {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -29,7 +29,8 @@ body {
   color: #FFFFFF;
   padding-top: 217px;
 }
-.title__text {
+
+.title-text {
   width: 481px;
   font-style: normal;
   font-weight: 300;
@@ -39,7 +40,8 @@ body {
   margin-top: 32px;
   margin-bottom: 44px;
 }
-.title__button {
+
+.title-button {
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
