@@ -19,6 +19,9 @@ body {
 .top {
   height: 1024px;
   background-image: url(img/Rectangle\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title__main {
@@ -29,7 +32,9 @@ body {
   color: #FFFFFF;
   padding-top: 217px;
 }
+
 .title__text {
+  display: block;
   width: 481px;
   font-style: normal;
   font-weight: 300;
@@ -39,7 +44,9 @@ body {
   margin-top: 32px;
   margin-bottom: 44px;
 }
+
 .title__button {
+  display: block;
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
@@ -49,23 +56,24 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-}
-
-.form {
+  padding-top: 13.3px;
+  text-align: center;
   transition: all 0.3s;
 }
-.form :hover {
-  transform: scale(1.05);
+.title__button :hover {
   background: #EB443F;
+  transform: scale(1.05);
 }
 
 .content {
-  height: 556px;
+  min-height: 556px;
   background: #000915;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 32px;
 }
+
 .content__item {
   font-style: normal;
   font-weight: 600;
@@ -84,18 +92,54 @@ body {
   background-size: cover;
   padding-left: 32px;
   padding-bottom: 32px;
+  margin-top: 128px;
   transition: all 0.3s;
 }
+
 .content__item:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #44D2FF;
 }
+
 .content__item_1 {
   background-image: url(img/Rectangle\ 6.svg);
 }
+
 .content__item_2 {
   background-image: url(img/Rectangle\ 7.svg);
 }
+
 .content__item_3 {
   background-image: url(img/Rectangle\ 8.svg);
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .title__main {
+    font-size: 32px;
+    line-height: 39px;
+    padding-top: 239px;
+    text-align: center;
+  }
+  .title__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 33px;
+    text-align: center;
+  }
+  .content {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
