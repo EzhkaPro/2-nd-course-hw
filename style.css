@@ -24,7 +24,7 @@ body {
   background-size: cover;
 }
 
-.title-main {
+.title__main {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -44,7 +44,9 @@ body {
   margin-top: 32px;
   margin-bottom: 44px;
 }
+
 .title__button {
+  display: block;
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
