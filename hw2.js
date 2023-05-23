@@ -5,10 +5,12 @@ a = 20;
 confirm (a);
 
 //Задание 2
-let yearOfIssue = Number(prompt ('года выпуска первого iPhone'));
+let yearOfIssue = ('года выпуска первого iPhone');
+alert (2007)
 
 //Задание 3
-let name = prompt ('имя создателя языка JavaScript');
+let name = ('имя создателя языка JavaScript');
+alert ('Брендан Эйх')
 
 //Задание 4
 let one = 10;
@@ -35,8 +37,8 @@ num += 5;
 num -= 3; 
 num *= 7; 
 num /= 3;
-num = ++num;
-num = --num;
+num = num + 1;
+num = num - 1;
 alert(num);
 
 
@@ -45,16 +47,14 @@ let age = Number (prompt( "Сколько вам лет?"))
 alert (age)
 
 
-//Задание 9
+//Задание 9 //непоняла как должно выглядеть то что выводится на экран 
 const user = {
     name:'Ben',
     age:'62',
     isAdmine: true,
 };
 let info = prompt("Какую информацию хотите узнать о пользователе?");
-alert (user.name)
-alert (user.age)
-alert (user.isAdmine = true)
+alert(user[info])
 
 
 //Задание 10
