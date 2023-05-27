@@ -146,9 +146,8 @@ body {
     flex-direction: column;
   }
   .content__item {
+    box-sizing: border-box;
     width: 343px;
     height: 300px;
-    padding-left: 0;
-    padding-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
