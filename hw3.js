@@ -3,8 +3,8 @@ let password = 'пароль';
 let enter = prompt('Введите пароль');
 let message;
 message = (password === enter) ? 'Пароль введен верно' :
-'Пароль введен неправильно';
-console.log (message);
+    'Пароль введен неправильно';
+console.log(message);
 
 
 
@@ -66,14 +66,14 @@ else {
 
 
 
-  // Задание 4
+// Задание 4
 let a = '2';
 let b = '3';
-alert(Number (a) + Number (b));
+alert(Number(a) + Number(b));
 
 
 
-// Задание 5
+//Задание 5 
 let season = prompt('Введите месяц ?');
 let monthNumber = 12;
 switch (season) {
@@ -119,25 +119,28 @@ switch (season) {
 }
 
 
+
 //Задание 7
-let check = Number (prompt('Пожалуйста, введите любое число'));
-   if(check % 2 != 0) {
-    alert('Число нечетное')}
-    else {
-        console.log('Число четное')
+let check = Number(prompt('Пожалуйста, введите любое число'));
+if (check % 2 != 0) {
+    alert('Число нечетное')
+}
+else {
+    console.log('Число четное')
 }
 
 //Задание 8
 let ios = 0;
 let Android = 1;
 let clientOS = (prompt('Пожалуйста, введите число: для iOS - 0, для Android - 1'));
-if(clientOS = ios) {
-    alert('Установите версию приложения для iOS по ссылке')}
-    else {
-        alert('Установите версию приложения для Android по ссылке')
+if (clientOS = ios) {
+    alert('Установите версию приложения для iOS по ссылке')
+}
+else {
+    alert('Установите версию приложения для Android по ссылке')
 }
 // не выходит каменный цветок((( в if надо что то указать но что непойму пока
- 
+
 
 
 //Задание 9
@@ -145,9 +148,11 @@ if(clientOS = ios) {
 let sistem = (prompt('операционная система телефона (iOS - 0, Android - 1)'));
 let year = (prompt('года производства'));
 let clientDeviceYear = 2015;
-if (sistem === 0, year <= 2015 ) {
-    alert ('Установите облегченную версию приложения для iOS по ссылке')}
-    else {alert ('Установите облегченную версию приложения для Android по ссылке')}
-if (sistem === 0, year > 2015){
-    alert('Установите версию приложения для iOS по ссылке')}
-    else { alert('Установите версию приложения для Android по ссылке')}
+if (sistem === 0, year <= 2015) {
+    alert('Установите облегченную версию приложения для iOS по ссылке')
+}
+else { alert('Установите облегченную версию приложения для Android по ссылке') }
+if (sistem === 0, year > 2015) {
+    alert('Установите версию приложения для iOS по ссылке')
+}
+else { alert('Установите версию приложения для Android по ссылке') }
