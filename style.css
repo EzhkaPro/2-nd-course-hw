@@ -8,12 +8,13 @@ a {
 }
 
 .center {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #000915;
 }
 
 .top {
@@ -46,9 +47,11 @@ body {
 }
 
 .title__button {
-  display: block;
-  width: 234.06px;
-  height: 48.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 234px;
+  height: 48px;
   background: #9C0332;
   border-radius: 30px;
   font-style: normal;
@@ -56,10 +59,13 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  padding-top: 13.3px;
-  box-sizing: border-box;
-  border-style: none;
-  text-align: center;
+
+  transition: all 0.3s;
+}
+.title__button:hover {
+  background: #EB443F;
+  transform: scale(1.05);
+
 }
 
 .content {
@@ -68,7 +74,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  margin-top: 128px;
   gap: 32px;
 }
 
@@ -90,10 +96,8 @@ body {
   background-size: cover;
   padding-left: 32px;
   padding-bottom: 32px;
-  margin-top: 128px;
   transition: all 0.3s;
 }
-
 .content__item:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #44D2FF;
@@ -111,13 +115,15 @@ body {
   background-image: url(img/Rectangle\ 8.svg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 376px) {
   .center {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
   }
   .top {
     height: 735px;
+    background-image: url(img/Rectangle\ 1\ mob.jpg);
+    background-size: 100%;
   }
   .title {
     display: flex;
@@ -132,13 +138,20 @@ body {
     text-align: center;
   }
   .title__text {
+    width: 343px;
     font-size: 14px;
     line-height: 22px;
     margin-top: 33px;
     text-align: center;
   }
   .content {
-    flex-wrap: wrap;
-    justify-content: center;
+
+    flex-direction: column;
+  }
+  .content__item {
+    box-sizing: border-box;
+    width: 343px;
+    height: 300px;
+
   }
 }/*# sourceMappingURL=style.css.map */

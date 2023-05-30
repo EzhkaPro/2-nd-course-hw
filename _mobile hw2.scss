@@ -1,19 +1,22 @@
-@media (max-width: 768px) {
+@media (max-width: 376px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
     }
 
     .top {
         height: 735px;
-        }
+        background-image: url(img/Rectangle\ 1\ mob.jpg);
+        background-size: 100%;
+    }
 
-    .title{
+
+    .title {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-      }
+    }
 
     .title__main {
         font-size: 32px;
@@ -23,6 +26,7 @@
     }
 
     .title__text {
+        width: 343px;
         font-size: 14px;
         line-height: 22px;
         margin-top: 33px;
@@ -30,12 +34,18 @@
     }
 
     .content {
-        flex-wrap: wrap;
-        justify-content: center;
+
+        flex-direction: column;
+
     }
 }
 
 @media (max-width: 375px) 
 {
 
+    .content__item {
+        box-sizing: border-box;
+        width: 343px;
+        height: 300px;
+    }
 }
