@@ -47,7 +47,6 @@ for (let n = 1000; n >= 50; num++) {
 
 
 //Задание 6
-
 let day = 5;
 let month = 31;
 day += 7
