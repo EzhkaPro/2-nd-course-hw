@@ -50,9 +50,6 @@ for (let n = 1000; n >= 50; num++) {
 
 let day = 5;
 let month = 31;
-while (day <= month ) {
-day++;
-day += 6
+day += 7
 day <= 31
 console.log (`Сегодня пятница, ${day} -е число. Необходимо подготовить отчет.`);
-}
