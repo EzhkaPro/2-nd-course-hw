@@ -59,11 +59,13 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+
   transition: all 0.3s;
 }
 .title__button:hover {
   background: #EB443F;
   transform: scale(1.05);
+
 }
 
 .content {
@@ -143,11 +145,13 @@ body {
     text-align: center;
   }
   .content {
+
     flex-direction: column;
   }
   .content__item {
     box-sizing: border-box;
     width: 343px;
     height: 300px;
+
   }
 }/*# sourceMappingURL=style.css.map */

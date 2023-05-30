@@ -59,12 +59,14 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+
   transition: all 0.3s;
 
   &:hover {
     background: #EB443F;
     transform: scale(1.05);
   }
+r
 }
 
 .content {
@@ -73,6 +75,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
   margin-top: 128px;
   gap: 32px;
 }

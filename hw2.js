@@ -25,6 +25,7 @@
  let result = x**5;
  alert (result);
 
+
 //Задание 6
 let c = 9;
 let b = 2;
@@ -37,8 +38,8 @@ num += 5;
 num -= 3; 
 num *= 7; 
 num /= 3;
-num = ++num;
-num = --num;
+num = num + 1;
+num = num - 1;
 alert(num);
 
 
@@ -47,12 +48,14 @@ let age = Number (prompt( "Сколько вам лет?"))
 alert (age)
 
 
-//Задание 9
+//Задание 9 //непоняла как должно выглядеть то что выводится на экран 
 const user = {
     name:'Ben',
     age:'62',
     isAdmine: true,
 };
+
+
 
 //Задание 9.1
 user['city of residence'] = '';
