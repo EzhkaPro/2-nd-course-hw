@@ -66,7 +66,6 @@ body {
     background: #EB443F;
     transform: scale(1.05);
   }
-r
 }
 
 .content {
@@ -75,7 +74,6 @@ r
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
   margin-top: 128px;
   gap: 32px;
 }
@@ -116,6 +114,34 @@ r
 
 .content__item_3 {
   background-image: url(img/Rectangle\ 8.svg);
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.product {
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-box {
+  height: 800px;
+  background-image: url(img/mhDEY.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 @import "mobile hw2";
