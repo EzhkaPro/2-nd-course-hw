@@ -2,9 +2,9 @@
 
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
+  console.log(numbs[i]);
 	if (numbs[i] == 10) 
     break;
- 	console.log(numbs[i]);
  }
 
 
@@ -12,15 +12,8 @@ for (let i = 0; i < numbs.length; i++) {
 
 //Задание 2
  let exe = [1, 5, 4, 10, 0, 3]; 
- let i = 0 
- for (let elem of exe) {
-     if (elem == 4) {
-             break;
-    }
-     ++i;
- } 
- console.log(i);
-
+ console.log(exe.indexOf(4));
+ 
 
 
 
@@ -74,11 +67,12 @@ console.log([...rev].reverse().join(''))
 
 
 // Задание 9
-let view = [
+
+const view = [
   [1, 2, 3,],
   [4, 5, 6]
 ];
-console.log(view.join())
+console.log(result = [].concat([1, 2, 3,],  [4, 5, 6]))
 
 
 
