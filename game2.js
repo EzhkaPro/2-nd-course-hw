@@ -1,4 +1,4 @@
-//  Задание 11 _ Работа с макетом
+//  Задание 11
 /*При клике на кнопку «Играть» запустить программу с функционалом, описанным ниже.
 Дан массив слов: ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'].
 Необходимо перемешать элементы массива и вывести на экран пользователю с использованием alert();
@@ -12,28 +12,18 @@
 
 
 const mass = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+const rndMass = mass.sort(() => 0.5 - Math.random());// перемешивает
+alert(rndMass);
+const neWarp = rndMass.map((str) => str.length);// считает знаки в элементе
+console.log(neWarp);
 
-let sortRan = mass.sort(func);
+let infoOne = prompt("Чему равнялся первый элемент массива?");
+let infoTwo = prompt("Чему равнялся последний элемент массива?");
 
-function func() {
-	return 0.5 - Math.random(); // мешает
-}
-alert(sortRan);// выводит на экран вопрос
-
-function neWarp(sortRan) {
-	return sortRan.map((str) => str.length);
-}
-
-console.log(neWarp(sortRan)); // считает знаки в элементе
-
-function arrElement(infoOne, infoTwo) {
-	if (neWarp((sortRan)[(0)]) /= infoOne && neWarp((sortRan)[(6)]) === infoTwo) {
+	if (infoOne !== neWarp[0] && infoTwo === neWarp[6]) {
 		alert('Вы были близки к победе!');
-	} else if (neWarp((sortRan)[(0)]) === infoOne && neWarp((sortRan)[(6)]) === infoTwo) {
+	} else if (infoOne = neWarp[0] && infoTwo === neWarp[6]) {
 		alert('Поздравляем, вы угадали!');
 	} else {
-		alert('Неверно');//не работает
-	}
-}
-infoOne = prompt("Чему равнялся первый элемент массива?");
-infoTwo = prompt("Чему равнялся последний элемент массива?");
+		alert('Неверно');
+	}; 
