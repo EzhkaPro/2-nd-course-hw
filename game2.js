@@ -12,18 +12,21 @@
 
 
 const mass = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-const rndMass = mass.sort(() => 0.5 - Math.random());// перемешивает
-alert(rndMass);
-const neWarp = rndMass.map((str) => str.length);// считает знаки в элементе
-console.log(neWarp);
+function rndMass() {
+	mass.sort(() => 0.5 - Math.random());
+	const massNum = mass.map((str) => str.length);
+	alert(mass);
+	let infoOne = +prompt("Чему равнялся первый элемент массива?");
+	let infoTwo = +prompt("Чему равнялся последний элемент массива?");
 
-let infoOne = prompt("Чему равнялся первый элемент массива?");
-let infoTwo = prompt("Чему равнялся последний элемент массива?");
-
-	if (infoOne !== neWarp[0] && infoTwo === neWarp[6]) {
+	if (infoOne !== massNum[0] && infoTwo === massNum[6]) {
 		alert('Вы были близки к победе!');
-	} else if (infoOne = neWarp[0] && infoTwo === neWarp[6]) {
+		rndMass();
+	} else if (infoOne = massNum[0] && infoTwo === massNum[6]) {
 		alert('Поздравляем, вы угадали!');
 	} else {
 		alert('Неверно');
-	}; 
+		rndMass();
+	};
+};
+rndMass();

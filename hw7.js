@@ -9,26 +9,27 @@ console.log(str.toUpperCase());
 
 // Задание 2
 /*Создайте функцию, которая в качестве параметров принимает массив строк и строку. 
-Возвращать данная / функция должна новый массив, содержащий только те элементы переданного массива, 
+Возвращать данная  функция должна новый массив, содержащий только те элементы переданного массива, 
 которые начинаются с переданной строки. Регистр символов не должен влиять.
-Пример вызова:
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []*/
+Пример вызова:*/
 
+let searchStart = (['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+let searchStart = (['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+let searchStart = (['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
-const Start =  ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
-const searchStart = [];
-
-
-Start.forEach((Start) => {
-	
-	if (Start.toLowerCase().includes(search.toLowerCase())) {
-        searchStart.push(Start);
-        console.log(searchStart);
-	}
-});
+function searchStart(mass, text) {
+    const output = [];
+ 
+    for (let i = 0; i < mass.length; i++) {
+       if (text(mass[i])) {
+        (mass).toLowerCase().startsWith(text.toLowerCase());
+        searchStart();
+        output.push(mass[i]);
+       }
+    };
+    return output;
+ };
+ 
 
 
 
