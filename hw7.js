@@ -13,24 +13,20 @@ console.log(str.toUpperCase());
 которые начинаются с переданной строки. Регистр символов не должен влиять.
 Пример вызова:*/
 
-let searchStart = (['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-let searchStart = (['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-let searchStart = (['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
-
-function searchStart(mass, text) {
-    const output = [];
+function searchStart(str, arr) {
+    const mass = [];
+       
+    str.forEach(element => {
+        if (element.toLowerCase().includes(arr.toLowerCase())) {
+            mass.push(element); 
+        };
+    });
+    return mass;
+};
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
  
-    for (let i = 0; i < mass.length; i++) {
-       if (text(mass[i])) {
-        (mass).toLowerCase().startsWith(text.toLowerCase());
-        searchStart();
-        output.push(mass[i]);
-       }
-    };
-    return output;
- };
- 
-
 
 
 
