@@ -140,7 +140,7 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 172px);
     padding-right: calc(50% - 172px);

@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 767px) {
     .center {
         padding-left: calc(50% - 172px);
         padding-right: calc(50% - 172px);
@@ -72,11 +72,12 @@
 }
 
 
-    @media (max-width: 375px) {
+@media (max-width: 375px) {
 
-        .content__item {
-            box-sizing: border-box;
-            width: 343px;
-            height: 300px;
-        }
+    .content__item {
+        box-sizing: border-box;
+        width: 343px;
+        height: 300px;
     }
+}
+
