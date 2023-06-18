@@ -38,11 +38,11 @@ function isPositive(num) {
 };
 
 function isMale(arr) {
-   return arr.filter((el) => el.gender === 'male');
+   return arr.gender === 'male';
 };
 
 function filter(arr, it) {
-      return it(arr);
+      return arr.filter(it);
 };
 
 console.log(filter([3, -4, 1, 9], isPositive)); // [3, 1, 9]
